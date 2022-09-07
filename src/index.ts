@@ -9,7 +9,7 @@ app.get('/', (_req, res) => {
 
 app.get('/kml/earthquakes.kml', (_req, res) => {
   const t = (Date.now() / 1000) % 300;
-  const p = 2 * Math.PI * 1 * t;
+  const p = 2 * Math.PI * 0.05 * t;
 
   res.contentType("application/kml").send(`<?xml version="1.0" encoding="UTF-8"?>
   <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xml:lang="en-US">

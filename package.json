@@ -1,0 +1,28 @@
+{
+  "name": "kmly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damix911/kmly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damix911/kmly/issues"
+  },
+  "homepage": "https://github.com/damix911/kmly#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

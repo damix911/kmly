@@ -3,11 +3,15 @@ import express from "express";
 const app = express()
 const port = process.env["PORT"];
 
-app.get('/', (_req, res) => {
-  res.send('Hello World!')
+app.get("/", (_req, res) => {
+  res.send("Welcome to kmly!");
 });
 
-app.get('/kml/earthquakes.kml', (_req, res) => {
+app.get("/version", (_req, res) => {
+  res.send("kmly - Version 0.01");
+});
+
+app.get("/kml/earthquakes.kml", (_req, res) => {
   const t = (Date.now() / 1000) % 300;
   const p = 2 * Math.PI * 0.05 * t;
 
